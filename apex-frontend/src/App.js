@@ -6,10 +6,13 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import { About } from "./components/About"
+import Navigation from "./components/Navigation"
 
 function App() {
   return (
     <Router>
+      <Navigation />
       
     <div className="App">
       <header className="App-header">
@@ -18,6 +21,10 @@ function App() {
           Welcome to the Strength and Conditioning Program
         </p>
       </header>
+      <Switch>
+        {/* <Route exact path="/" component={Home} /> */}
+        <Route exact path="/about" component={About} />
+      </Switch>
     </div>
     </Router>
   );
