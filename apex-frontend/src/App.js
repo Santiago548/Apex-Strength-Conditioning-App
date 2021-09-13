@@ -1,4 +1,4 @@
-import logo from './assests/APEX_logo.jpg';
+import React, { Component } from "react";
 import './App.css';
 import {
   BrowserRouter as Router,
@@ -7,6 +7,7 @@ import {
   Link
 } from "react-router-dom";
 import { About } from "./components/About"
+import Home from "./containers/Home"
 import Navigation from "./components/Navigation"
 
 function App() {
@@ -15,14 +16,9 @@ function App() {
       <Navigation />
       
     <div className="App">
-      <header className="App-header">
-        <img src={logo} alt="logo" />
-        <p>
-          Welcome to the Strength and Conditioning Program
-        </p>
-      </header>
+   
       <Switch>
-        {/* <Route exact path="/" component={Home} /> */}
+        <Route exact path="/" component={Home} />
         <Route exact path="/about" component={About} />
       </Switch>
     </div>
