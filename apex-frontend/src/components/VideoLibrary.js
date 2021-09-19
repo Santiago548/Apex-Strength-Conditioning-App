@@ -86,6 +86,35 @@ const VideoNavigation = () => {
                     color: 'white'
                 }}>Run/ Sprint training</NavLink>
 
+                {/* PROGRAMS */}
+
+                <NavLink
+                to='pkstrength/beginner'
+                exact
+                style={link}
+                activeStyle={{
+                    background: "#191d32",
+                    color: 'white'
+                }}>Beginner Movements</NavLink>
+
+            <NavLink
+                to='pkstrength/intermediate'
+                exact
+                style={link}
+                activeStyle={{
+                    background: "#191d32",
+                    color: 'white'
+                }}>Intermediate Movements</NavLink>
+
+            <NavLink
+                to='pkstrength/advanced'
+                exact
+                style={link}
+                activeStyle={{
+                    background: "#191d32",
+                    color: 'white'
+                }}>Advanced Movements</NavLink>
+
         </div>
     )
 }
