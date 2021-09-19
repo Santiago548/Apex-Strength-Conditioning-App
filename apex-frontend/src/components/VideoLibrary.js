@@ -40,6 +40,15 @@ const VideoNavigation = () => {
                     background: "#191d32",
                     color: 'white'
                 }}>Pike</NavLink>
+
+            <NavLink
+                to='/bridges'
+                exact
+                style={link}
+                activeStyle={{
+                    background: "#191d32",
+                    color: 'white'
+                }}>Bridge Training</NavLink>
 {/* strength */}
             <NavLink
                 to='/drop_land'
@@ -49,7 +58,33 @@ const VideoNavigation = () => {
                     background: "#191d32",
                     color: 'white'
                 }}>Drop/Landing</NavLink>
+{/* progressions and drills */}
+            <NavLink
+                to='/brachiate'
+                exact
+                style={link}
+                activeStyle={{
+                    background: "#191d32",
+                    color: 'white'
+                }}>Climb/Brachiate</NavLink>
 
+            <NavLink
+                to='/support_movements'
+                exact
+                style={link}
+                activeStyle={{
+                    background: "#191d32",
+                    color: 'white'
+                }}>Support Movements</NavLink>
+
+            <NavLink
+                to='/run_sprint'
+                exact
+                style={link}
+                activeStyle={{
+                    background: "#191d32",
+                    color: 'white'
+                }}>Run/ Sprint training</NavLink>
 
         </div>
     )
